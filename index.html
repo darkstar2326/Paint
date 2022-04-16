@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Online Paint</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="bg.jpg">
+        <h1>Online Free Paint Application</h1>
+        <div class='button-group' id="buttons-group">
+            <select name="Color" id="colordrp" onchange="colorval()">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            
+            <select name="Thickness" id="thickdrp" onchange="thickval()">
+                <option value="2">2px</option>
+                <option value="4">4px</option>
+                <option value="6">6px</option>
+                <option value="8">8px</option>
+                <option value="10">10px</option>
+            </select>
+            <button onclick= "erase()" id="eraserbtn">Eraser</button>
+            <button onclick='resetCanvas()' id="resetbtn">Reset</button>
+            <button onclick="download()" id="downloadbtn">Download the Drawing</button>
+          </div>
+        <canvas id="canvas1" width="1000" height="550">
+
+        </canvas>
+        <script src="app.js" defer></script>
+    </body>
+</html>

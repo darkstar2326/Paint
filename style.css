@@ -1,0 +1,37 @@
+*{
+    text-align: center;
+}
+
+#canvas1{
+    border: 2px solid black;
+    background-color: white;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+}
+
+.button-group {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 179px;
+  } 
+
+  button{
+    border-radius: 7px;
+    width: 95px;
+  }
+
+  #downloadbtn{
+      width: 175px;
+  }
+
+  #copybtn{
+      width: 200px;
+  }
